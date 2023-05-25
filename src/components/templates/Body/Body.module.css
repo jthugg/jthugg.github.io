@@ -1,0 +1,30 @@
+.Body{
+  height: 200vh;
+  background-color: #fff;
+}
+
+@media (max-width: 767px) {
+  .Body {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .Body {
+    width: 100%;
+  }
+}
+
+@media (min-width: 992px) {
+  .Body {
+    width: calc(100% - var(--header-width));
+    margin-left: var(--header-width);
+  }
+}
+
+@media (min-width: 1200px) {
+  .Body {
+    width: calc(100% - var(--header-width));
+    margin-left: var(--header-width);
+  }
+}

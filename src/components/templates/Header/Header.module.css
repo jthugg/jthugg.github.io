@@ -1,0 +1,35 @@
+@import "../../../_root.css";
+
+.Header {
+  width: var(--header-width);
+  height: var(--header-height);
+  background-color: var(--header-color);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+  transition-duration: .2s;
+  z-index: 100;
+}
+
+@media (max-width: 767px) {
+  .Header {
+    position: sticky;
+  }
+}
+
+@media (min-width: 768px) {
+  .Header {
+    position: sticky;
+  }
+}
+
+@media (min-width: 992px) {
+  .Header {
+    position: fixed;
+  }
+}
+
+@media (min-width: 1200px) {
+  .Header {
+    position: fixed;
+  }
+}
+
