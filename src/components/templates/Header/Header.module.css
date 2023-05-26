@@ -1,5 +1,3 @@
-@import "../../../_root.css";
-
 .Header {
   width: var(--header-width);
   height: var(--header-height);
