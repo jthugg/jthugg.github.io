@@ -10,16 +10,9 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 199px) {
   .Body {
     width: 100%;
-  }
-}
-
-@media (min-width: 992px) and (max-width: 1199px) {
-  .Body {
-    width: calc(100% - var(--header-width));
-    margin-left: var(--header-width);
   }
 }
 

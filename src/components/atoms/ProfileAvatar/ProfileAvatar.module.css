@@ -14,20 +14,11 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 1199px) {
   .Avatar {
     width: 40px;
     height: 40px;
     border-radius: 20px;
-  }
-}
-
-@media (min-width: 992px) and (max-width: 1199px) {
-  .Avatar {
-    width: 150px;
-    height: 150px;
-    border-radius: 125px;
-    box-shadow: 0 8px 8px rgba(0, 0, 0, .5);
   }
 }
 
