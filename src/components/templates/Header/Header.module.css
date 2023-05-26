@@ -36,7 +36,7 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 1199px){
+@media (min-width: 768px) and (max-width: 1199px) {
   .Header {
     position: sticky;
     flex-direction: row;
@@ -54,26 +54,6 @@
     display: none;
   }
 }
-
-/* @media (min-width: 992px) and (max-width: 1199px) {
-  .Header {
-    position: fixed;
-    flex-direction: column;
-  }
-  
-  .Profile {
-    width: 100%;
-    padding: 50px 0;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .Description {
-    width: 200px;
-    margin-top: 30px;
-  }
-} */
 
 @media (min-width: 1200px) {
   .Header {
