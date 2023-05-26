@@ -5,6 +5,11 @@ export const isLogin = atom({
   default: localStorage.getItem("user") !== null
 })
 
+export const isOwner = atom({ // this state brings the root authorities
+  key: "isOwner",
+  default: false
+})
+
 export const screenWidth = atom({
   key: "screenWidth",
   default: window.innerWidth
@@ -13,4 +18,14 @@ export const screenWidth = atom({
 export const screenHeight = atom({
   key: "screenHeight",
   default: window.innerHeight
+})
+
+export const ownerData = atom({
+  key: "ownerData",
+  default: null
+})
+
+export const language = atom({
+  key: "language",
+  default: navigator.language || "en"
 })

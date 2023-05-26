@@ -1,5 +1,5 @@
 import { selector } from "recoil";
-import { isLogin, screenHeight, screenWidth } from "./store";
+import { isLogin, isOwner, ownerData, screenHeight, screenWidth, language } from "./store";
 
 export const isLoginSelector = selector({
   key: "isLoginSelector",
@@ -8,6 +8,17 @@ export const isLoginSelector = selector({
   },
   set: ({set}) => {
     set(isLogin, localStorage.getItem("user") !== null)
+  }
+})
+
+export const isOwnerSelector = selector({
+  // TODO: feature -> request check that user is owner or not
+  key: "isOwnerSelector",
+  get: ({get}) => {
+    return get(isOwner)
+  },
+  set: ({set}) => {
+    set(isOwner, () => {})
   }
 })
 
@@ -28,5 +39,25 @@ export const screenHeightSelector = selector({
   },
   set: ({set}) => {
     set(screenHeight, window.innerHeight)
+  }
+})
+
+export const ownerDataSelector = selector({
+  key: "ownerDataSelector",
+  get: ({get}) => {
+    return get(ownerData)
+  },
+  set: ({set}, newValue) => {
+    set(ownerData, newValue)
+  }
+})
+
+export const languageSelector = selector({
+  key: "languageSelector",
+  get: ({get}) => {
+    return get(language)
+  },
+  set: ({set}) => {
+    set(language, navigator.language || "en")
   }
 })
