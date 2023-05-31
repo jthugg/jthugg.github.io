@@ -1,5 +1,6 @@
 :root {
   --basic-transition-duration: .5s;
+  --fast-transition-duration: .2s;
 }
 
 @media (max-width: 767px) {
@@ -32,6 +33,7 @@
     --header-background-color: #333;
     --header-shadow-color: rgb(0, 0, 0, 0.6);
     --main-background-color: #555;
+    --bottom-shadow-color: rgba(255, 255, 255, .8);
   }
 }
 
@@ -44,5 +46,6 @@
     --header-background-color: #fff;
     --header-shadow-color: rgb(0, 0, 0, 0.1);
     --main-background-color: #fff;
+    --bottom-shadow-color: rgba(0, 0, 0, .5);
   }
 }

@@ -1,10 +1,11 @@
 import { selector } from "recoil";
-import { isLogin, isOwner, ownerData, screenHeight, screenWidth, language } from "./store";
+import { isLogin, isOwner, ownerData, screenHeight, screenWidth, language, currentCategory } from "./store";
 
 export const isLoginSelector = selector({
   key: "isLoginSelector",
   get: ({get}) => {
     return get(isLogin)
+    // return true
   },
   set: ({set}) => {
     set(isLogin, localStorage.getItem("user") !== null)
@@ -16,6 +17,7 @@ export const isOwnerSelector = selector({
   key: "isOwnerSelector",
   get: ({get}) => {
     return get(isOwner)
+    // return true
   },
   set: ({set}) => {
     set(isOwner, () => {})
@@ -59,5 +61,15 @@ export const languageSelector = selector({
   },
   set: ({set}) => {
     set(language, navigator.language || "en")
+  }
+})
+
+export const currentCategorySelector = selector({
+  key: "currentCategorySelector",
+  get: ({get}) => {
+    return get(currentCategory)
+  },
+  set: ({set}, newValue) => {
+    set(currentCategory, newValue)
   }
 })

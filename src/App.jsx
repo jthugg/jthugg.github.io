@@ -5,7 +5,7 @@ import {
   Routes
 } from "react-router-dom"
 import { useRecoilValue, useSetRecoilState } from "recoil";
-import { ownerDataSelector } from "./globalStates/selectors";
+import { ownerDataSelector, screenWidthSelector } from "./globalStates/selectors";
 import settings from "./settings.json"
 import Home from "./pages/Home/Home";
 import NotFound from "./pages/NotFound/NotFound";
@@ -17,7 +17,15 @@ export default function App() {
 
   const ownerData = useRecoilValue(ownerDataSelector)
   const setOwnerData = useSetRecoilState(ownerDataSelector)
+  const setScreenWidth = useSetRecoilState(screenWidthSelector)
   const [loadingOwnerData, setLoadingOwnerData] = useState(true)
+
+  useEffect(() => {
+    window.addEventListener("resize", () => setScreenWidth())
+    return () => {
+      window.removeEventListener("resize", () => setScreenWidth())
+    }
+  }, [setScreenWidth])
 
   useEffect(() => {
     fetch(`https://api.github.com/users/${settings.owner}`)
@@ -42,8 +50,8 @@ export default function App() {
           <Route path="/" element={<Home />} />
           <Route path="/*" element={<NotFound />} />
         </Routes>
+        <Footer />
       </Body>
-      <Footer />
     </BrowserRouter>
   )
 }

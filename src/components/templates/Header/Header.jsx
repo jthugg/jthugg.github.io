@@ -1,13 +1,18 @@
 import { useRecoilValue } from "recoil"
-import { isLoginSelector, ownerDataSelector } from "../../../globalStates/selectors"
-import ProfileAvatar from "../../atoms/ProfileAvatar/ProfileAvatar"
-import styles from "./Header.module.css"
+import { isLoginSelector, isOwnerSelector, ownerDataSelector, screenWidthSelector } from "../../../globalStates/selectors"
+import ProfileAvatar from "../../molecules/ProfileAvatar/ProfileAvatar"
 import LoginButton from "../../atoms/LoginButton/LoginButton"
+import Categories from "../../molecules/Categories/Categories"
+import { Link } from "react-router-dom"
+import SettingsIcon from "../../atoms/SettingsIcon/SettingsIcon"
+import styles from "./Header.module.css"
 
 export default function Header() {
 
   const ownerData = useRecoilValue(ownerDataSelector)
   const isLogin = useRecoilValue(isLoginSelector)
+  const screenWidth = useRecoilValue(screenWidthSelector)
+  const isOwner = useRecoilValue(isOwnerSelector)
 
   return (
     <header className={styles.Header}>
@@ -27,10 +32,29 @@ export default function Header() {
           </p>
         </div>
       </div>
-      <div className={styles.Categories}></div>
       {
-        isLogin ||
+        screenWidth < 1200 ||
+        <Categories />
+      }
+      {/* {
+        screenWidth < 1200 &&
+        <div className={styles.Navigator}>asdf</div>
+      } */}
+      {
+        !isLogin &&
         <LoginButton />
+      }
+      {
+        isOwner &&
+        <Link
+          to={"/settings"}
+          className={styles.Settings}
+        >
+          <SettingsIcon
+            width={24}
+            height={24}
+          />
+        </Link>
       }
     </header>
   )

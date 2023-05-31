@@ -5,7 +5,7 @@ import styles from "./LoginButton.module.css"
 
 export default function LoginButton(props) {
 
-  const language = useRecoilValue(languageSelector) || "en"
+  const language = useRecoilValue(languageSelector)
 
   return (
     <button

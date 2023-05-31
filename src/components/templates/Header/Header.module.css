@@ -3,7 +3,7 @@
   height: var(--header-height);
   display: flex;
   background-color: var(--header-background-color);
-  box-shadow: 4px 4px 4px var(--header-shadow-color);
+  box-shadow: 0 0 16px var(--header-shadow-color);
   transition-duration: var(--basic-transition-duration);
   z-index: 100;
 }
@@ -15,6 +15,12 @@
 
 .OwnerName, .Bio {
   word-wrap: break-word;
+}
+
+.Settings {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media (max-width: 767px) {
@@ -58,8 +64,9 @@
 @media (min-width: 1200px) {
   .Header {
     position: fixed;
-    padding: 50px 0;
+    padding: 50px 0 150px;
     flex-direction: column;
+    overflow-y: scroll;
   }
   
   .Profile {
@@ -71,7 +78,28 @@
   
   .Description {
     width: 200px;
-    margin-top: 30px;
+    margin-top: 20px;
+  }
+
+  .Settings {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    transition-duration: var(--fast-transition-duration);
+  }
+
+  .Settings * {
+    display: block;
+  }
+  
+  .Settings:hover {
+    scale: 1.2;
+    animation: rotate_icon 3s linear infinite;
+  }
+
+  @keyframes rotate_icon {
+    100% {
+      transform: rotate(360deg);
+    }
   }
 }
-

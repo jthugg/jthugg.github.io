@@ -1,4 +1,5 @@
 import { atom } from "recoil";
+import settings from "../settings.json"
 
 export const isLogin = atom({
   key: "isLogin",
@@ -7,7 +8,8 @@ export const isLogin = atom({
 
 export const isOwner = atom({ // this state brings the root authorities
   key: "isOwner",
-  default: false
+  default: localStorage.getItem("user") &&
+    localStorage.getItem("user").username === settings.owner
 })
 
 export const screenWidth = atom({
@@ -28,4 +30,9 @@ export const ownerData = atom({
 export const language = atom({
   key: "language",
   default: navigator.language || "en"
+})
+
+export const currentCategory = atom({
+  key: "currentCategory",
+  default: null
 })
