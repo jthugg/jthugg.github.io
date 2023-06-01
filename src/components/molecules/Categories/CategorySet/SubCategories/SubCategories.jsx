@@ -23,7 +23,7 @@ export default function SubCategory(props) {
           return (
             <Link
               key={index}
-              to={item.link}
+              to={`/category${item.link}`}
               className={styles.SubCategory}
               onClick={() => onLinkclink()}
             >

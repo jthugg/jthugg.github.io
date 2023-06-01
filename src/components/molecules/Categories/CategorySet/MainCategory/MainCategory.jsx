@@ -21,7 +21,7 @@ export default function MainCategory(props) {
   return (
     <div className={styles.MainCategory}>
       <Link
-        to={props.category.link}
+        to={`/category${props.category.link}`}
         className={styles.Link}
         onClick={() => onLinkClick()}
       >
