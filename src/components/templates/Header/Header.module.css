@@ -67,6 +67,12 @@
     padding: 50px 0 150px;
     flex-direction: column;
     overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .Header::-webkit-scrollbar {
+    display: none;
   }
   
   .Profile {
