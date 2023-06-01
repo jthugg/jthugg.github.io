@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom"
-import Arrow from "../../../../atoms/Arrow/Arrow"
-import styles from "./MainCategory.module.css"
 import { useSetRecoilState } from "recoil"
 import { currentCategorySelector } from "../../../../../globalStates/selectors"
+import Arrow from "../../../../atoms/Arrow/Arrow"
+import styles from "./MainCategory.module.css"
 
 export default function MainCategory(props) {
 
@@ -32,6 +32,7 @@ export default function MainCategory(props) {
           <Arrow
             stroke="#888"
             className={styles.ArrowBox}
+            transform={props.isExpanded ? "rotate(-180)" : "rotate(0)"}
             onClick={(e) => onArrowClick(e)}
           />
       }

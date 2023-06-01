@@ -1,9 +1,14 @@
+import { Link } from "react-router-dom"
 import { useRecoilValue } from "recoil"
-import { isLoginSelector, isOwnerSelector, ownerDataSelector, screenWidthSelector } from "../../../globalStates/selectors"
+import {
+  isLoginSelector,
+  isOwnerSelector,
+  ownerDataSelector,
+  screenWidthSelector
+} from "../../../globalStates/selectors"
 import ProfileAvatar from "../../molecules/ProfileAvatar/ProfileAvatar"
 import LoginButton from "../../atoms/LoginButton/LoginButton"
 import Categories from "../../molecules/Categories/Categories"
-import { Link } from "react-router-dom"
 import SettingsIcon from "../../atoms/SettingsIcon/SettingsIcon"
 import styles from "./Header.module.css"
 

@@ -1,6 +1,12 @@
-import { Link, useNavigate } from "react-router-dom";
+import {
+  Link,
+  useNavigate
+} from "react-router-dom";
 import { useRecoilValue } from "recoil";
-import { ownerDataSelector, screenWidthSelector } from "../../../globalStates/selectors";
+import {
+  ownerDataSelector,
+  screenWidthSelector
+} from "../../../globalStates/selectors";
 import HomeLinkIcon from "../../atoms/HomeLinkIcon/HomeLinkIcon";
 import NewTabIcon from "../../atoms/NewTabIcon/NewTabIcon";
 import styles from "./ProfileAvatar.module.css"

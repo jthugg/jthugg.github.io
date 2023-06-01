@@ -1,4 +1,7 @@
-import { useEffect, useState } from "react"
+import {
+  useEffect,
+  useState
+} from "react"
 import { useRecoilValue } from "recoil"
 import { languageSelector } from "../../../globalStates/selectors"
 import languageData from "../../../language_data.json"
