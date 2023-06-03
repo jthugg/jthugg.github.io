@@ -1,0 +1,16 @@
+.LoginButton {
+  flex-shrink: 0;
+  height: 32px;
+  margin: 0 auto;
+  padding: 0 15px;
+  border: none;
+  border-radius: 20px;
+  color: var(--reversed-text-color);
+  background-color: var(--reversed-body-background-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  cursor: pointer;
+  transition-duration: var(--basic-transition-duration);
+}

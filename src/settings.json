@@ -1,0 +1,13 @@
+{
+  "owner": "jthugg",
+  "title": "Hi I'm Neo!",
+  "server": {
+    "base_url": "http://localhost:8080",
+    "categories": {
+      "get": "/api/categories",
+      "create": "/api/categories",
+      "update": "/api/categories/patch",
+      "delete": "/api/categories/delete"
+    }
+  }
+}

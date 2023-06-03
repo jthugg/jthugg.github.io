@@ -1,0 +1,25 @@
+.Body {
+  display: block;
+  height: 200vh;
+  background-color: var(--main-background-color);
+  transition-duration: var(--basic-transition-duration);
+}
+
+@media (max-width: 767px) {
+  .Body {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 199px) {
+  .Body {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .Body {
+    width: calc(100% - var(--header-width));
+    margin-left: var(--header-width);
+  }
+}

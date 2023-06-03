@@ -1,0 +1,68 @@
+.Avatar {
+  background-image: url(/public/no-avatar.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  transition-duration: var(--basic-transition-duration);
+  width: var(--profile-avatar-width);
+  height: var(--profile-avatar-height);
+}
+
+@media (max-width: 767px) {
+  .Avatar {
+    border-radius: 25px;
+    cursor: pointer;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .Avatar {
+    border-radius: 20px;
+    cursor: pointer;
+  }
+}
+
+@media (min-width: 1200px) {
+  .Avatar {
+    border-radius: 125px;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, .5);
+  }
+  
+  .Cover {
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 125px;
+    background-color: rgba(0, 0, 0, .5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    transition-duration: var(--fast-transition-duration);
+  }
+
+  .Avatar:hover .Cover {
+    opacity: 1;
+  }
+
+  .Link {
+    color: #fff;
+    background-color: rgba(32, 32, 32, 0.9);
+    box-shadow: 0 0 4px rgba(0, 0, 0, .9);
+    width: 100px;
+    height: 30px;
+    border-radius: 8px;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+    transition-duration: var(--fast-transition-duration);
+  }
+
+  .Link:hover {
+    transform: scale(1.2);
+  }
+}

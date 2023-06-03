@@ -1,0 +1,486 @@
+{
+  "ko-KR": {
+    "login_join": "로그인",
+    "categories": "카테고리"
+  },
+  "ko": {
+    "login_join": "로그인",
+    "categories": "카테고리"
+  },
+  "af": {
+    "login_join": "login",
+    "categories": "Categories"
+  },
+  "sq": {
+    "login_join": "login",
+    "categories": "Categories"
+  },
+  "ar-SA": {
+    "login_join": "login",
+    "categories": "Categories"
+  },
+  "ar-IQ": {
+    "login_join": "login",
+    "categories": "Categories"
+  },
+  "ar-EG": {
+    "login_join": "login",
+    "categories": "Categories"
+  },
+  "ar-LY": {
+    "login_join": "login",
+    "categories": "Categories"
+  },
+  "ar-DZ": {
+    "login_join": "login",
+    "categories": "Categories"
+  },
+  "ar-MA": {
+    "login_join": "login",
+    "categories": "Categories"
+  },
+  "ar-TN": {
+    "login_join": "login",
+    "categories": "Categories"
+  },
+  "ar-OM": {
+    "login_join": "login",
+    "categories": "Categories"
+  },
+  "ar-YE": {
+    "login_join": "login",
+    "categories": "Categories"
+  },
+  "ar-SY": {
+    "login_join": "login",
+    "categories": "Categories"
+  },
+  "ar-JO": {
+    "login_join": "login",
+    "categories": "Categories"
+  },
+  "ar-LB": {
+    "login_join": "login",
+    "categories": "Categories"
+  },
+  "ar-KW": {
+    "login_join": "login",
+    "categories": "Categories"
+  },
+  "ar-AE": {
+    "login_join": "login",
+    "categories": "Categories"
+  },
+  "ar-BH": {
+    "login_join": "login",
+    "categories": "Categories"
+  },
+  "ar-QA": {
+    "login_join": "login",
+    "categories": "Categories"
+  },
+  "eu": {
+    "login_join": "login",
+    "categories": "Categories"
+  },
+  "bg": {
+    "login_join": "login",
+    "categories": "Categories"
+  },
+  "be": {
+    "login_join": "login",
+    "categories": "Categories"
+  },
+  "ca": {
+    "login_join": "login",
+    "categories": "Categories"
+  },
+  "zh-TW": {
+    "login_join": "login",
+    "categories": "Categories"
+  },
+  "zh-CN": {
+    "login_join": "login",
+    "categories": "Categories"
+  },
+  "zh-HK": {
+    "login_join": "login",
+    "categories": "Categories"
+  },
+  "zh-SG": {
+    "login_join": "login",
+    "categories": "Categories"
+  },
+  "hr": {
+    "login_join": "login",
+    "categories": "Categories"
+  },
+  "cs": {
+    "login_join": "login",
+    "categories": "Categories"
+  },
+  "da": {
+    "login_join": "login",
+    "categories": "Categories"
+  },
+  "nl": {
+    "login_join": "login",
+    "categories": "Categories"
+  },
+  "nl-BE": {
+    "login_join": "login",
+    "categories": "Categories"
+  },
+  "en": {
+    "login_join": "login",
+    "categories": "Categories"
+  },
+  "en-US": {
+    "login_join": "login",
+    "categories": "Categories"
+  },
+  "en-EG": {
+    "login_join": "login",
+    "categories": "Categories"
+  },
+  "en-AU": {
+    "login_join": "login",
+    "categories": "Categories"
+  },
+  "en-GB": {
+    "login_join": "login",
+    "categories": "Categories"
+  },
+  "en-CA": {
+    "login_join": "login",
+    "categories": "Categories"
+  },
+  "en-NZ": {
+    "login_join": "login",
+    "categories": "Categories"
+  },
+  "en-IE": {
+    "login_join": "login",
+    "categories": "Categories"
+  },
+  "en-ZA": {
+    "login_join": "login",
+    "categories": "Categories"
+  },
+  "en-JM": {
+    "login_join": "login",
+    "categories": "Categories"
+  },
+  "en-BZ": {
+    "login_join": "login",
+    "categories": "Categories"
+  },
+  "en-TT": {
+    "login_join": "login",
+    "categories": "Categories"
+  },
+  "et": {
+    "login_join": "login",
+    "categories": "Categories"
+  },
+  "fo": {
+    "login_join": "login",
+    "categories": "Categories"
+  },
+  "fa": {
+    "login_join": "login",
+    "categories": "Categories"
+  },
+  "fi": {
+    "login_join": "login",
+    "categories": "Categories"
+  },
+  "fr": {
+    "login_join": "login",
+    "categories": "Categories"
+  },
+  "fr-BE": {
+    "login_join": "login",
+    "categories": "Categories"
+  },
+  "fr-CA": {
+    "login_join": "login",
+    "categories": "Categories"
+  },
+  "fr-CH": {
+    "login_join": "login",
+    "categories": "Categories"
+  },
+  "fr-LU": {
+    "login_join": "login",
+    "categories": "Categories"
+  },
+  "gd": {
+    "login_join": "login",
+    "categories": "Categories"
+  },
+  "gd-IE": {
+    "login_join": "login",
+    "categories": "Categories"
+  },
+  "de": {
+    "login_join": "login",
+    "categories": "Categories"
+  },
+  "de-CH": {
+    "login_join": "login",
+    "categories": "Categories"
+  },
+  "de-AT": {
+    "login_join": "login",
+    "categories": "Categories"
+  },
+  "de-LU": {
+    "login_join": "login",
+    "categories": "Categories"
+  },
+  "de-LI": {
+    "login_join": "login",
+    "categories": "Categories"
+  },
+  "el": {
+    "login_join": "login",
+    "categories": "Categories"
+  },
+  "he": {
+    "login_join": "login",
+    "categories": "Categories"
+  },
+  "hi": {
+    "login_join": "login",
+    "categories": "Categories"
+  },
+  "hu": {
+    "login_join": "login",
+    "categories": "Categories"
+  },
+  "is": {
+    "login_join": "login",
+    "categories": "Categories"
+  },
+  "id": {
+    "login_join": "login",
+    "categories": "Categories"
+  },
+  "it": {
+    "login_join": "login",
+    "categories": "Categories"
+  },
+  "it-CH": {
+    "login_join": "login",
+    "categories": "Categories"
+  },
+  "ja": {
+    "login_join": "login",
+    "categories": "Categories"
+  },
+  "lv": {
+    "login_join": "login",
+    "categories": "Categories"
+  },
+  "lt": {
+    "login_join": "login",
+    "categories": "Categories"
+  },
+  "mk": {
+    "login_join": "login",
+    "categories": "Categories"
+  },
+  "mt": {
+    "login_join": "login",
+    "categories": "Categories"
+  },
+  "no": {
+    "login_join": "login",
+    "categories": "Categories"
+  },
+  "pl": {
+    "login_join": "login",
+    "categories": "Categories"
+  },
+  "pt-BR": {
+    "login_join": "login",
+    "categories": "Categories"
+  },
+  "pt": {
+    "login_join": "login",
+    "categories": "Categories"
+  },
+  "rm": {
+    "login_join": "login",
+    "categories": "Categories"
+  },
+  "ro": {
+    "login_join": "login",
+    "categories": "Categories"
+  },
+  "ro-MO": {
+    "login_join": "login",
+    "categories": "Categories"
+  },
+  "ru": {
+    "login_join": "login",
+    "categories": "Categories"
+  },
+  "ru-MI": {
+    "login_join": "login",
+    "categories": "Categories"
+  },
+  "sz": {
+    "login_join": "login",
+    "categories": "Categories"
+  },
+  "sr": {
+    "login_join": "login",
+    "categories": "Categories"
+  },
+  "sk": {
+    "login_join": "login",
+    "categories": "Categories"
+  },
+  "sl": {
+    "login_join": "login",
+    "categories": "Categories"
+  },
+  "sb": {
+    "login_join": "login",
+    "categories": "Categories"
+  },
+  "es": {
+    "login_join": "login",
+    "categories": "Categories"
+  },
+  "es-AR": {
+    "login_join": "login",
+    "categories": "Categories"
+  },
+  "es-GT": {
+    "login_join": "login",
+    "categories": "Categories"
+  },
+  "es-CR": {
+    "login_join": "login",
+    "categories": "Categories"
+  },
+  "es-PA": {
+    "login_join": "login",
+    "categories": "Categories"
+  },
+  "es-DO": {
+    "login_join": "login",
+    "categories": "Categories"
+  },
+  "es-MX": {
+    "login_join": "login",
+    "categories": "Categories"
+  },
+  "es-VE": {
+    "login_join": "login",
+    "categories": "Categories"
+  },
+  "es-CO": {
+    "login_join": "login",
+    "categories": "Categories"
+  },
+  "es-PE": {
+    "login_join": "login",
+    "categories": "Categories"
+  },
+  "es-EC": {
+    "login_join": "login",
+    "categories": "Categories"
+  },
+  "es-CL": {
+    "login_join": "login",
+    "categories": "Categories"
+  },
+  "es-UY": {
+    "login_join": "login",
+    "categories": "Categories"
+  },
+  "es-PY": {
+    "login_join": "login",
+    "categories": "Categories"
+  },
+  "es-BO": {
+    "login_join": "login",
+    "categories": "Categories"
+  },
+  "es-SV": {
+    "login_join": "login",
+    "categories": "Categories"
+  },
+  "es-HN": {
+    "login_join": "login",
+    "categories": "Categories"
+  },
+  "es-NI": {
+    "login_join": "login",
+    "categories": "Categories"
+  },
+  "es-PR": {
+    "login_join": "login",
+    "categories": "Categories"
+  },
+  "sx": {
+    "login_join": "login",
+    "categories": "Categories"
+  },
+  "sv": {
+    "login_join": "login",
+    "categories": "Categories"
+  },
+  "sv-FI": {
+    "login_join": "login",
+    "categories": "Categories"
+  },
+  "th": {
+    "login_join": "login",
+    "categories": "Categories"
+  },
+  "ts": {
+    "login_join": "login",
+    "categories": "Categories"
+  },
+  "tn": {
+    "login_join": "login",
+    "categories": "Categories"
+  },
+  "tr": {
+    "login_join": "login",
+    "categories": "Categories"
+  },
+  "uk": {
+    "login_join": "login",
+    "categories": "Categories"
+  },
+  "ur": {
+    "login_join": "login",
+    "categories": "Categories"
+  },
+  "ve": {
+    "login_join": "login",
+    "categories": "Categories"
+  },
+  "vi": {
+    "login_join": "login",
+    "categories": "Categories"
+  },
+  "xh": {
+    "login_join": "login",
+    "categories": "Categories"
+  },
+  "ji": {
+    "login_join": "login",
+    "categories": "Categories"
+  },
+  "zu": {
+    "login_join": "login",
+    "categories": "Categories"
+  }
+}
