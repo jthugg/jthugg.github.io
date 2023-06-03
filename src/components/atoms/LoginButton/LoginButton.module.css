@@ -1,5 +1,7 @@
 .LoginButton {
+  flex-shrink: 0;
   height: 32px;
+  margin: 0 auto;
   padding: 0 15px;
   border: none;
   border-radius: 20px;
@@ -10,22 +12,5 @@
   align-items: center;
   font-weight: 600;
   cursor: pointer;
-}
-
-@media (max-width: 767px) {
-  .LoginButton {
-    margin: auto 0;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 1199px) {
-  .LoginButton {
-    margin: auto 0;
-  }
-}
-
-@media (min-width: 1200px) {
-  .LoginButton {
-    display: none;
-  }
+  transition-duration: var(--basic-transition-duration);
 }

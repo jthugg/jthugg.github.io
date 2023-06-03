@@ -1,5 +1,5 @@
 import { selector } from "recoil";
-import { isLogin, isOwner, ownerData, screenHeight, screenWidth, language, currentCategory } from "./store";
+import { isLogin, isOwner, ownerData, screenHeight, screenWidth, language, currentCategory, currentScrollY } from "./store";
 
 export const isLoginSelector = selector({
   key: "isLoginSelector",
@@ -41,6 +41,16 @@ export const screenHeightSelector = selector({
   },
   set: ({set}) => {
     set(screenHeight, window.innerHeight)
+  }
+})
+
+export const currentScrollYSelector = selector({
+  key: "currentScrollYSelector",
+  get: ({get}) => {
+    return get(currentScrollY)
+  },
+  set: ({set}, newValue) => {
+    set(currentScrollY, newValue)
   }
 })
 

@@ -1,4 +1,5 @@
 .Body {
+  display: block;
   height: 200vh;
   background-color: var(--main-background-color);
   transition-duration: var(--basic-transition-duration);

@@ -33,23 +33,26 @@ export default function ProfileAvatar(props) {
       onClick={() => onAvatarClick()}
       {...props}
     >
-      <div className={styles.Cover}>
-        <Link
-          to="/"
-          className={styles.Link}
-        >
-          <HomeLinkIcon width={14} height={14} fill="#fff" />
-          Main
-        </Link>
-        <Link
-          to={ownerData.html_url}
-          target="_blank"
-          className={styles.Link}
-        >
-          <NewTabIcon width={14} height={14} fill="#fff" />
-          GitHub
-        </Link>
-      </div>
+      {
+        screenWidth >= 1200 &&
+        <div className={styles.Cover}>
+          <Link
+            to="/"
+            className={styles.Link}
+          >
+            <HomeLinkIcon width={14} height={14} fill="#fff" />
+            Main
+          </Link>
+          <Link
+            to={ownerData.html_url}
+            target="_blank"
+            className={styles.Link}
+          >
+            <NewTabIcon width={14} height={14} fill="#fff" />
+            GitHub
+          </Link>
+        </div>
+      }
     </div>
   )
 }

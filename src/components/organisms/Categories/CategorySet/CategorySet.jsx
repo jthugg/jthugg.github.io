@@ -5,8 +5,8 @@ import {
 import { useLocation } from "react-router-dom"
 import { useRecoilValue } from "recoil"
 import { currentCategorySelector } from "../../../../globalStates/selectors"
-import MainCategory from "./MainCategory/MainCategory"
-import SubCategories from "./SubCategories/SubCategories"
+import MainCategory from "../../../molecules/MainCategory/MainCategory"
+import SubCategories from "../../../molecules/SubCategories/SubCategories"
 import styles from "./CategorySet.module.css"
 
 export default function CategorySet(props) {

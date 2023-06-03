@@ -4,29 +4,19 @@
   background-position: center center;
   background-size: cover;
   transition-duration: var(--basic-transition-duration);
-}
-
-.Cover {
-  display: none;
+  width: var(--profile-avatar-width);
+  height: var(--profile-avatar-height);
 }
 
 @media (max-width: 767px) {
   .Avatar {
-    width: 50px;
-    height: 50px;
     border-radius: 25px;
     cursor: pointer;
-  }
-  
-  .Cover {
-    display: none;
   }
 }
 
 @media (min-width: 768px) and (max-width: 1199px) {
   .Avatar {
-    width: 40px;
-    height: 40px;
     border-radius: 20px;
     cursor: pointer;
   }
@@ -34,8 +24,6 @@
 
 @media (min-width: 1200px) {
   .Avatar {
-    width: 200px;
-    height: 200px;
     border-radius: 125px;
     box-shadow: 0 8px 8px rgba(0, 0, 0, .5);
   }

@@ -1,19 +1,23 @@
 :root {
+  --profile-avatar-width: 200px;
+  --profile-avatar-height: 200px;
   --basic-transition-duration: .5s;
   --fast-transition-duration: .2s;
 }
 
 @media (max-width: 767px) {
   :root {
-    --header-width: 100%;
-    --header-height: 80px;
+    --header-width: 0px;
+    --header-height: 0px;
+    --navigation-bar-height: 60px;
   }
 }
 
 @media (min-width: 768px) and (max-width: 1199px) {
   :root {
-    --header-width: 100%;
-    --header-height: 60px;
+    --header-width: 0px;
+    --header-height: 0px;
+    --navigation-bar-height: 50px;
   }
 }
 
@@ -21,6 +25,7 @@
   :root {
     --header-width: 300px;
     --header-height: 100vh;
+    --navigation-bar-height: 50px;
   }
 }
 
@@ -32,6 +37,7 @@
     --reversed-text-color: #333333;
     --header-background-color: #333;
     --header-shadow-color: rgb(0, 0, 0, 0.6);
+    --navigation-bar-color: rgba(0, 0, 0, 0.2);
     --main-background-color: #555;
     --bottom-shadow-color: rgba(255, 255, 255, .8);
   }
@@ -45,6 +51,7 @@
     --reversed-text-color: #f8f8f8;
     --header-background-color: #fff;
     --header-shadow-color: rgb(0, 0, 0, 0.1);
+    --navigation-bar-color: rgba(255, 255, 255, 0.8);
     --main-background-color: #fff;
     --bottom-shadow-color: rgba(0, 0, 0, .5);
   }

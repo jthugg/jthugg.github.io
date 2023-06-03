@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom"
 import { useSetRecoilState } from "recoil"
-import { currentCategorySelector } from "../../../../../globalStates/selectors"
-import Arrow from "../../../../atoms/Arrow/Arrow"
+import { currentCategorySelector } from "../../../globalStates/selectors"
+import Arrow from "../../atoms/Arrow/Arrow"
 import styles from "./MainCategory.module.css"
 
 export default function MainCategory(props) {

@@ -1,0 +1,21 @@
+.SubCategorySet {
+  width: 100%;
+  overflow: hidden;
+  transition-duration: var(--fast-transition-duration);
+}
+
+.SubCategory {
+  height: 30px;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+.SubCategory:hover {
+  background-color: #eee;
+}
+
+.SubCategory::before {
+  content: "•";
+  margin-right: 3px;
+}

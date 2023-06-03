@@ -1,111 +1,35 @@
 .Header {
   width: var(--header-width);
   height: var(--header-height);
+  padding: 50px 0 150px;
+  position: fixed;
   display: flex;
+  flex-direction: column;
   background-color: var(--header-background-color);
   box-shadow: 0 0 16px var(--header-shadow-color);
-  transition-duration: var(--basic-transition-duration);
   z-index: 100;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.Header::-webkit-scrollbar {
+  display: none;
 }
 
 .Profile {
+  width: 100%;
   display: flex;
-  transition-duration: var(--basic-transition-duration);
-}
-
-.OwnerName, .Bio {
-  word-wrap: break-word;
-}
-
-.Settings {
-  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-@media (max-width: 767px) {
-  .Header {
-    position: sticky;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 0 20px;
-  }
-
-  .Profile {
-    height: 100%;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .Description {
-    display: none;
-  }
+.Description {
+  width: 200px;
+  margin: 30px auto 0;
 }
 
-@media (min-width: 768px) and (max-width: 1199px) {
-  .Header {
-    position: sticky;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 0 50px;
-  }
-
-  .Profile {
-    height: 100%;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .Description {
-    display: none;
-  }
-}
-
-@media (min-width: 1200px) {
-  .Header {
-    position: fixed;
-    padding: 50px 0 150px;
-    flex-direction: column;
-    overflow-y: scroll;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-  }
-
-  .Header::-webkit-scrollbar {
-    display: none;
-  }
-  
-  .Profile {
-    width: 100%;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .Description {
-    width: 200px;
-    margin-top: 30px;
-  }
-
-  .Settings {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    transition-duration: var(--fast-transition-duration);
-  }
-
-  .Settings * {
-    display: block;
-  }
-  
-  .Settings:hover {
-    scale: 1.2;
-    animation: rotate_icon 3s linear infinite;
-  }
-
-  @keyframes rotate_icon {
-    100% {
-      transform: rotate(360deg);
-    }
-  }
+.OwnerName, .Bio {
+  word-wrap: break-word;
 }

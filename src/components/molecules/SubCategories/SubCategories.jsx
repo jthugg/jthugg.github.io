@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
 import { useSetRecoilState } from "recoil"
-import { currentCategorySelector } from "../../../../../globalStates/selectors"
+import { currentCategorySelector } from "../../../globalStates/selectors"
 import styles from "./SubCategory.module.css"
 
 export default function SubCategory(props) {

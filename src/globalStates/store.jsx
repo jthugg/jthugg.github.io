@@ -22,6 +22,11 @@ export const screenHeight = atom({
   default: window.innerHeight
 })
 
+export const currentScrollY = atom({
+  key: "currentScrollY",
+  default: window.scrollY
+})
+
 export const ownerData = atom({
   key: "ownerData",
   default: null

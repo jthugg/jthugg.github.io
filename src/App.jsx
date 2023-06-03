@@ -5,27 +5,32 @@ import {
   Routes
 } from "react-router-dom"
 import { useRecoilValue, useSetRecoilState } from "recoil";
-import { ownerDataSelector, screenWidthSelector } from "./globalStates/selectors";
+import { currentScrollYSelector, ownerDataSelector, screenWidthSelector } from "./globalStates/selectors";
 import settings from "./settings.json"
 import Home from "./pages/Home/Home";
 import NotFound from "./pages/NotFound/NotFound";
 import Header from "./components/templates/Header/Header";
 import Body from "./components/templates/Body/Body";
 import Footer from "./components/templates/Footer/Footer";
+import NavigationBar from "./components/organisms/NavigationBar/NavigationBar";
 
 export default function App() {
 
   const ownerData = useRecoilValue(ownerDataSelector)
   const setOwnerData = useSetRecoilState(ownerDataSelector)
+  const screenWidth = useRecoilValue(screenWidthSelector)
   const setScreenWidth = useSetRecoilState(screenWidthSelector)
+  const setCurrentScrollY = useSetRecoilState(currentScrollYSelector)
   const [loadingOwnerData, setLoadingOwnerData] = useState(true)
 
   useEffect(() => {
     window.addEventListener("resize", () => setScreenWidth())
+    window.addEventListener("scroll", () => setCurrentScrollY(window.scrollY))
     return () => {
       window.removeEventListener("resize", () => setScreenWidth())
+      window.removeEventListener("scroll", () => setCurrentScrollY(window.scrollY))
     }
-  }, [setScreenWidth])
+  }, [setScreenWidth, setCurrentScrollY])
 
   useEffect(() => {
     fetch(`https://api.github.com/users/${settings.owner}`)
@@ -44,8 +49,12 @@ export default function App() {
   return (
     loadingOwnerData ||
     <BrowserRouter basename={process.env.PUBLIC_URL}>
-      <Header />
+      {
+        screenWidth >= 1200 &&
+        <Header />
+      }
       <Body>
+        <NavigationBar />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/*" element={<NotFound />} />
